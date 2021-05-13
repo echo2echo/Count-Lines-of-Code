@@ -4,9 +4,6 @@
 # Perl script to count lines of code written in Perl or PHP
 # Made for Developers
 # By Joel Rader  info[at]joelrader[dot]net
-# Created: 5/2/2014
-# Last Updated: 10/17/2020
-# Copyleft 🄯 : 10/26/2019
 
 =pod
 
