@@ -12,6 +12,6 @@ For example, to count lines in a Perl file
 
 	$ ./count_lines_of_code.pl --type=Perl file_to_count.pl
 	
-For example, to count lines in a PHP file
+Or for example, to count lines in a PHP file
 
 	$ ./count_lines_of_code.pl --type=PHP index.php
