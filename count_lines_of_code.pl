@@ -14,7 +14,7 @@
 
 =head1 SYNOPSIS
 	
-	bash$ ./count_lines_of_code.pl --type=(Perl||PHP) <filename>
+	bash$ ./count_lines_of_code.pl --type=(Perl||PHP) <path_to_filename>
 
 	# For example, to count a Perl file	
 	bash$ ./count_lines_of_code.pl --type=Perl file_to_count.pl
