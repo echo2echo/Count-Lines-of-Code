@@ -14,13 +14,13 @@
 
 =head1 SYNOPSIS
 	
-	bash$ ./count_lines_of_code.pl --type=(Perl||PHP) <path_to_filename>
+	bash$ ./count_lines_of_code.pl --type=(Perl||PHP)
 
-	# For example, to count a Perl file	
-	bash$ ./count_lines_of_code.pl --type=Perl file_to_count.pl
+	# For example, to count all Perl files	
+	bash$ ./count_lines_of_code.pl --type=Perl
 	
-	# For example, to count a PHP file 
-	bash$ ./count_lines_of_code.pl --type=PHP index.php
+	# For example, to count all PHP files 
+	bash$ ./count_lines_of_code.pl --type=PHP
 	
 =head1 AUTHOR
 
@@ -44,21 +44,11 @@ my $sumLines;
 if ( $filetype =~ m/Perl/ ) { $command = "find . -name \"*.pl\" | sort"; }
 if ( $filetype =~ m/PHP/ ) { $command = "find . -name \"*.php\" | sort"; }
 
-
-#my $command = "find . -name \"*.pl\" | sort";
-
-
-
 my @files = `$command`;
 
 our $file;
 
 foreach $file ( @files ) { 
-	
-	# print "$file\n";
-
-	# chomp $file;
-
 
 	if (!$filetype) {
 		$filetype = "";
@@ -93,9 +83,9 @@ foreach $file ( @files ) {
 
 # Subroutine for script usage
 sub usage {
-	print "Script Usage: ./count_lines_of_code.pl --type=(PHP|Perl) <filename>\n";
-        print 'Example... bash:$ ./count_lines_of_code.pl --type=Perl file_to_count.pl'."\n";
-	print 'Example... bash:$ ./count_lines_of_code.pl --type=PHP index.php'."\n";
+	print "Script Usage: ./count_lines_of_code.pl --type=(PHP|Perl) \n";
+        print "Example... bash:$ ./count_lines_of_code.pl --type=Perl\n";
+	print "Example... bash:$ ./count_lines_of_code.pl --type=PHP\n";
         exit;
 }
 
