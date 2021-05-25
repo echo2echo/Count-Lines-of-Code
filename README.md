@@ -8,7 +8,7 @@ Grant permissions:
 
 	$ sudo chmod 755 cloc.pl
 
-For example, to count lines in a Perl file:	
+For example, to count lines in all the Perl files in a directory and each subdirectory	
 
 
 	$ ./cloc.pl --type=Perl
