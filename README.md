@@ -2,7 +2,7 @@
 
 Perl Script to Count Lines of Code of Perl and PHP Files
 
-Place script in directory with file to count
+Place script in directory with files to count
 
 Grant permissions:
 
