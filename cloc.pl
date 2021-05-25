@@ -11,7 +11,7 @@
 
 	count_lines_of_code.pl - Perl script to count lines of code written in Perl or PHP
         The script counts lines of code, comments, blank lines and POD ( Plain Old Documentation with Perl Scripts )	
-	The script summarizes the lines of code for all files of Perl of PHP type, in a directory and sub directories
+	The script summarizes the lines of code for all files of Perl of PHP type in a directory and all sub directories
 	
 =head1 SYNOPSIS
 	
