@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-# File name: count_lines_of_code.pl
+# File name: original_count_lines_of_code.pl
 # Perl script to count lines of code written in Perl or PHP
 # Made for Developers
 # By Joel Rader  info[at]joelrader[dot]net
