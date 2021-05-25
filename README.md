@@ -12,6 +12,6 @@ For example, to count lines in all the Perl files in a directory and each subdir
 
 	$ ./cloc.pl --type=Perl
 	
-Or for example, to count lines in all PHP files in a directory and subdirectory
+Or for example, to count lines in all PHP files in a directory and each subdirectory
 
 	$ ./cloc.pl --type=PHP
