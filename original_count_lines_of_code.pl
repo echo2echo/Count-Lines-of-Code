@@ -1,5 +1,6 @@
 #!/usr/bin/env perl
 
+# Use cloc.pl in this repository instead of this file
 # File name: original_count_lines_of_code.pl
 # Perl script to count lines of code written in Perl or PHP
 # Made for Developers
