@@ -6,12 +6,13 @@ Place script in directory with file to count
 
 Grant permissions:
 
-	$ sudo chmod 755 count_lines_of_code.pl
+	$ sudo chmod 755 cloc.pl
 
 For example, to count lines in a Perl file:	
 
-	$ ./count_lines_of_code.pl --type=Perl file_to_count.pl
+
+	$ ./cloc.pl --type=Perl
 	
 Or for example, to count lines in a PHP file:
 
-	$ ./count_lines_of_code.pl --type=PHP index.php
+	$ ./cloc.pl --type=PHP
