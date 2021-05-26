@@ -188,7 +188,6 @@ sub php_count {
 	$number_of_comment_lines += $block;
 	my $lines = $count - $block;
 	
-	#chomp $file;
 	$file =~ s/\.\///;
 
 	print "Lines of Code for $file";
