@@ -92,12 +92,6 @@ sub usage {
 
 # Subroutine for Perl script line count
 sub perl_count {
-	
-	#	chomp $file;
-	
-	#	$file =~ s/\.\///;
-	
-	# print "REGEX $file\n";
 
 	if ($file !~ m/(\.pl)/) {	
 		print "Script --type flag was set for counting Perl file lines of code. \nThe file should end in .pl for a Perl script\n";
