@@ -89,9 +89,9 @@ foreach $file ( @files ) {
 
 # Subroutine for script usage
 sub usage {
-	print "Script Usage: \$: ./cloc.pl --type=(PHP|Perl) \n";
-        print "Example: \$: ./cloc.pl --type=Perl\n";
-	print "Example \$: ./cloc.pl --type=PHP\n";
+	print "Script Usage: \$ ./cloc.pl --type=(PHP|Perl) \n";
+        print "Example: \$ ./cloc.pl --type=Perl\n";
+	print "Example \$ ./cloc.pl --type=PHP\n";
         exit;
 }
 
