@@ -38,7 +38,7 @@ my $filetype= "";
 
 $filetype = $ARGV[0];
 
-if (!$filetype) { usage(); }
+if (($filetype ne "--type=PHP") && ($filetype ne "--type=Perl")) { usage(); }
 
 my $sumTotal;
 my $sumBlock;
