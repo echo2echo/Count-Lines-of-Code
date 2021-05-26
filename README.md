@@ -4,7 +4,7 @@ Perl Script to Count Lines of Code of Perl and PHP Files
 
 Place script in directory with files to count
 
-Grant permissions:
+Grant permission:
 
 	$ sudo chmod 755 cloc.pl
 
