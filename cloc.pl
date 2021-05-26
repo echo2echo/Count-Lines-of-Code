@@ -223,7 +223,7 @@ if ( $filetype eq "--type=PHP") {
  " Total: $sumTotal
  Comments: $sumComments
  Blank: $sumBlank
- Code: $sumLines\n\n";
+ Code: $sumLines\n";
 
 }
 
@@ -237,7 +237,7 @@ if ( $filetype eq "--type=Perl") {
  Block: $sumBlock 
  Comments: $sumComments
  Blank: $sumBlank
- Code: $sumLines\n\n";
+ Code: $sumLines\n";
 
 }
 
