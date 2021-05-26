@@ -2,7 +2,7 @@
 
 # File name: cloc.pl
 # Perl script to count lines of code written in Perl or PHP
-# Made for Developers
+# Made for busy Developers
 # By Joel Rader  info[at]joelrader[dot]net
 
 =pod
