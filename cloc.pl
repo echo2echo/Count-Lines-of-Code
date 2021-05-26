@@ -9,19 +9,19 @@
 
 =head1 NAME
 
-	count_lines_of_code.pl - Perl script to count lines of code written in Perl or PHP
+	cloc.pl - Perl script to count lines of code written in Perl or PHP
         The script counts lines of code, comments, blank lines and POD ( Plain Old Documentation with Perl Scripts )	
 	The script summarizes the lines of code for all Perl or PHP files in a directory and all sub directories
 	
 =head1 SYNOPSIS
 	
-	bash$ ./count_lines_of_code.pl --type=(Perl||PHP)
+	bash$ ./cloc.pl --type=(Perl||PHP)
 
 	# For example, to count all Perl files	
-	bash$ ./count_lines_of_code.pl --type=Perl
+	bash$ ./cloc.pl --type=Perl
 	
 	# For example, to count all PHP files 
-	bash$ ./count_lines_of_code.pl --type=PHP
+	bash$ ./cloc.pl --type=PHP
 	
 =head1 AUTHOR
 
