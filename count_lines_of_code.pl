@@ -18,7 +18,7 @@
 	bash$ ./count_lines_of_code.pl --type=(Perl||PHP)
 
 	# For example, to count all Perl files	
-	bash$ ./cloc.pl --type=Perl
+	bash$ ./count_lines_of_code.pl --type=Perl
 	
 	# For example, to count all PHP files 
 	bash$ ./cloc.pl --type=PHP
