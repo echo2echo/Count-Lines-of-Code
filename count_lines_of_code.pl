@@ -50,7 +50,6 @@ my $sumLines;
 
 if ( $filetype =~ m/Perl/ ) { $command = "find . -name \"*.pl\" | sort"; }
 if ( $filetype =~ m/PHP/ ) { $command = "find . -name \"*.php\" | sort"; }
-# if ( $filetype eq "" ){ usage(); }
 
 my @files = `$command`;
 
