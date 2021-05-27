@@ -21,7 +21,7 @@
 	bash$ ./count_lines_of_code.pl --type=Perl
 	
 	# For example, to count all PHP files 
-	bash$ ./cloc.pl --type=PHP
+	bash$ ./count_lines_of_code.pl --type=PHP
 	
 =head1 AUTHOR
 
