@@ -29,8 +29,8 @@
 
 =cut
 
-#use warnings;
-#use strict;
+use warnings;
+use strict;
 use diagnostics;
 
 my $command;
