@@ -318,10 +318,10 @@ if ( $filetype eq "--type=PHP") {
 	print "Summary for all PHP files: \n";
 	print "~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
 	print 
- " Total: $sumTotal
+ " Total:    $sumTotal
  Comments: $sumComments
- Blank: $sumBlank
- Code: $sumLines\n";
+ Blank:    $sumBlank
+ Code:     $sumLines\n";
 
 }
 
@@ -331,26 +331,28 @@ if ( $filetype eq "--type=Perl") {
 	print "Summary for all Perl files: \n";
 	print "~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
 	print 
- " Total: $sumTotal
- Block: $sumBlock 
- Comments: $sumComments
- Blank: $sumBlank
- Code: $sumLines\n";
+ " Total:     $sumTotal
+ Block:     $sumBlock 
+ Comments:  $sumComments
+ Blank:     $sumBlank
+ Code:      $sumLines\n";
 
 }
 
 
 if ( $filetype eq "--type=HTML") {
+
 	print "~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
 	print "Summary for all HTML files: \n";
 	print "~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
-	print 
- " Total: $sumTotal
+print	
+ " Total:    $sumTotal
  Comments: $sumComments
- Blank: $sumBlank
- Code: $sumLines\n";
+ Blank:    $sumBlank
+ Code:     $sumLines\n";
 
 }
+
 
 
 
