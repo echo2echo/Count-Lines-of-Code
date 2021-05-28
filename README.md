@@ -19,3 +19,7 @@ Or for example, to count lines in all PHP files in a directory and each subdirec
 Or for example, to count lines in all HTML files in a directory and each subdirectory
 
 	$ ./count_lines_of_code.pl --type=HTML
+	
+To count lines of code of a webpage, run the following command in the same directory as the count_lines_of_code.pl script
+
+	wget -cO - http://website.net > filename.html
