@@ -265,8 +265,6 @@ sub html_count {
 	my $count = my $slurp_lines = my $total = my $blank = my $number_of_comment_lines = my $comment = 0;
 	my @comment_lines;
 	my $comment_number;
-	my @count;
-
 
 	while (<FILE>) {
 		
