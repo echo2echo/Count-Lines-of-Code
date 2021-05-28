@@ -22,7 +22,7 @@ Or for example, to count lines in all HTML files in a directory and each subdire
 	
 To count lines of code of a webpage, run the following command in the same directory as the count_lines_of_code.pl script
 
-	wget -cO - http://website.net > filename.html
+	$ wget -cO - http://website.net > filename.html
 
 Then run the script...
 
