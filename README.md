@@ -16,8 +16,9 @@ Or for example, to count lines in all PHP files in a directory and each subdirec
 
 	$ ./count_lines_of_code.pl --type=PHP
 	
-Or for example, to count lines in all HTML files in a directory and each subdirectory
-There is now support for counting .shtml and .htm files.  Use flag --type=HTML 
+Or for example, to count lines in all HTML files in a directory and each subdirectory.
+
+There is now support for counting .shtml and .htm files along with vanilla .html files.  Use flag --type=HTML 
 
 	$ ./count_lines_of_code.pl --type=HTML
 	
