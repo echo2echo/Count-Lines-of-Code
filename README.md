@@ -1,6 +1,6 @@
 # Count-Lines-of-Code
 
-Perl Script to Count Lines of Code of Perl and PHP Files
+Perl Script to Count Lines of Code of Perl, PHP and HTML Files
 
 Place script in directory with files to count
 
@@ -17,6 +17,7 @@ Or for example, to count lines in all PHP files in a directory and each subdirec
 	$ ./count_lines_of_code.pl --type=PHP
 	
 Or for example, to count lines in all HTML files in a directory and each subdirectory
+There is now support for counting .shtml and .htm files.  Use flag --type=HTML 
 
 	$ ./count_lines_of_code.pl --type=HTML
 	
