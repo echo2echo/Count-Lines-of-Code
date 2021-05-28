@@ -15,3 +15,7 @@ For example, to count lines in all the Perl files in a directory and each subdir
 Or for example, to count lines in all PHP files in a directory and each subdirectory
 
 	$ ./count_lines_of_code.pl --type=PHP
+	
+Or for example, to count lines in all HTML files in a directory and each subdirectory
+
+	$ ./count_lines_of_code.pl --type=HTML
