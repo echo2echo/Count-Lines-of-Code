@@ -56,6 +56,12 @@ if ( $filetype =~ m/HTML/ ) { $command = "find . -name \"*.html\" | sort"; }
 
 my @files = `$command`;
 
+my $exist = $filetype;
+
+$exist =~ s/--type=//;
+
+if (!@files) {print "No files of type $exist in this directory.\n"; exit; }
+
 our $file;
 
 foreach $file ( @files ) { 
