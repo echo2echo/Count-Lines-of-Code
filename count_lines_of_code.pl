@@ -1,7 +1,7 @@
 #!/usr/bin/env perl
 
 # File name: cloc.pl
-# Perl script to count lines of code written in Perl or PHP
+# Perl script to count lines of code written in Perl, PHP or HTML
 # By Joel Rader  info[at]joelrader[dot]net
 
 =pod
