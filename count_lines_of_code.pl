@@ -52,7 +52,7 @@ my $sumLines;
 
 if ( $filetype =~ m/Perl/ ) { $command = "find . -name \"*.pl\" | sort"; }
 if ( $filetype =~ m/PHP/ ) { $command = "find . -name \"*.php\" | sort"; }
-if ( $filetype =~ m/HTML/ ) { $command = "find . -name \"*.html\" | sort"; }
+if ( $filetype =~ m/HTML/ ) { $command = "find . -name \"*.*htm*\" | sort"; }
 
 my @files = `$command`;
 
@@ -255,8 +255,8 @@ print
 
 # Subroutine for HTML file line count
 sub html_count {
-	if ($file !~ m/(\.html)/) {
-		print "Script --type flag was set for counting HTML file lines of code.\nThe file should end in .html\n";
+	if ($file !~ m/(\.*htm*)/) {
+		print "Script --type flag was set for counting HTML file lines of code.\nThe file should end in .html, .htm or .shtml \n";
 		exit;
 	}
 
@@ -353,5 +353,6 @@ if ( $filetype eq "--type=HTML") {
  Code: $sumLines\n";
 
 }
+
 
 
