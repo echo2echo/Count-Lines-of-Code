@@ -29,3 +29,7 @@ To count lines of code of a webpage, run something like the following in the sam
 Then run the script...
 
 	$ ./count_lines_of_code.pl --type=HTML
+	
+To get count for a single file...
+	
+	$ ./count_lines_of_code.pl --type=HTML | grep -A 4 file_to_count.html
