@@ -332,7 +332,7 @@ if ( $filetype eq "--type=Perl") {
 	print "~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
 	print 
  " Total:     $sumTotal
- POD:     $sumBlock 
+ POD:       $sumBlock 
  Comments:  $sumComments
  Blank:     $sumBlank
  Code:      $sumLines\n";
