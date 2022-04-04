@@ -38,7 +38,6 @@ Or for a single Perl file...
 
 	$ ./count_lines_of_code.pl --type=Perl | grep -A 5 "filename.pl"
 
-If there is a permission error you could try running script with sudo
+Files to be counted require read permission.  If there is a permission error you could try running script with sudo
 	
 	$ sudo ./count_lines_of_code.pl --type=Perl | grep -A 5 "filename.pl"
-
