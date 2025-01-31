@@ -2,27 +2,27 @@
 
 Perl Script to Count Lines of Code of Perl, PHP and HTML Files on Linux
 
-Place script in directory with files to count
+Place script in directory with files and subdirectories to count
 
 Grant permission to run script:
 
-	$ sudo chmod 755 count_lines_of_code.pl
+	$ chmod 755 count_lines_of_code.pl
 
-For example, to count lines of all the Perl files in a directory and each subdirectory	
+For example, to count lines of all the Perl files in a directory and each subdirectory:
 
 	$ ./count_lines_of_code.pl --type=Perl
 	
-For example, to count lines of all PHP files in a directory and each subdirectory
+For example, to count lines of all PHP files in a directory and each subdirectory:
 
 	$ ./count_lines_of_code.pl --type=PHP
 
 There is now support for counting .shtml and .htm files along with vanilla .html files.  Use flag --type=HTML for each variation
 	
-For example, to count lines of all HTML files in a directory and each subdirectory
+For example, to count lines of all HTML files in a directory and each subdirectory:
 
 	$ ./count_lines_of_code.pl --type=HTML
 	
-To count lines of code of a webpage, run something like the following in the same directory as the count_lines_of_code.pl script
+To count lines of code of a webpage, run something like the following in the same directory as the count_lines_of_code.pl script:
 	
 	$ wget -cO - http://website.net > filename.html
 
