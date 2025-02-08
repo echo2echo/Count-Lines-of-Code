@@ -46,8 +46,6 @@ if ($ARGV[1]) {
 	$scriptname =~ s/--omit=//;
 }
 
-$scriptname =~ s/--type=$scriptname/$scriptname/;
-
 if (!$filetype) { usage(); }
 
 if (($filetype ne "--type=PHP") && ($filetype ne "--type=Perl") && ($filetype ne "--type=HTML")) { usage(); }
