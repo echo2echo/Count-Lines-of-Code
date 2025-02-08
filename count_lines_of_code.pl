@@ -25,7 +25,7 @@
 	# For example, to count all HTML files 
 	$ ./count_lines_of_code.pl --type=HTML
 
-	# For example, to skip counting lines of perl in this script in results
+	# For example, to skip counting lines of this perl script
 	$ ./count_lines_of_code.pl --type=Perl --omit=count_lines_of_code.pl
  
 =head1 AUTHOR
@@ -122,6 +122,7 @@ sub usage {
         print "Example: \$ $scriptname --type=Perl\n";
         print "Example: \$ $scriptname --type=PHP\n";
         print "Example: \$ $scriptname --type=HTML\n";
+	# To skip counting lines of this perl script
         print "Example: \$ $scriptname --type=Perl --omit=$scriptname\n";
         exit;
 }
