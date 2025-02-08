@@ -24,7 +24,10 @@
 		
 	# For example, to count all HTML files 
 	$ ./count_lines_of_code.pl --type=HTML
-	
+
+	# For example, to skip counting lines of perl in this script in results
+	$ ./count_lines_of_code.pl --type=Perl --omit=count_lines_of_cde.pl
+ 
 =head1 AUTHOR
 
 	Joel Rader <https://joelrader.net>
