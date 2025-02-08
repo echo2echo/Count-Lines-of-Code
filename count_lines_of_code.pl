@@ -121,12 +121,12 @@ sub usage {
         my $scriptname= $0;
         $scriptname =~ s/\.\///;
 
-        print "Script Usage: \$ $scriptname --type=(PHP|Perl|HTML) \n";
-        print "Example: \$ $scriptname --type=Perl\n";
-        print "Example: \$ $scriptname --type=PHP\n";
-        print "Example: \$ $scriptname --type=HTML\n";
+        print "Script Usage: \$ ./$scriptname --type=(PHP|Perl|HTML) \n";
+        print "Example: \$ ./$scriptname --type=Perl\n";
+        print "Example: \$ ./$scriptname --type=PHP\n";
+        print "Example: \$ ./$scriptname --type=HTML\n";
 	# To skip counting lines of this perl script
-        print "Example: \$ $scriptname --type=Perl --omit=$scriptname\n";
+        print "Example: \$ ./$scriptname --type=Perl --omit=$scriptname\n";
         exit;
 }
 
