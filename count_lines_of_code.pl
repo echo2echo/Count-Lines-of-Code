@@ -4,7 +4,7 @@
 # Perl script to count lines of code written in Perl, PHP or HTML
 # By Joel Rader  info[at]joelrader[dot]net
 
-=pod
+u=pod
 
 =head1 NAME
 
@@ -24,6 +24,9 @@
 		
 	# For example, to count all HTML files 
 	$ ./count_lines_of_code.pl --type=HTML
+
+	#  Or count a single Perl file...
+        $ ./count_lines_of_code.pl --type=Perl | grep -A 5 "filename.pl"
 
 	# For example, to skip counting lines of this perl script
 	$ ./count_lines_of_code.pl --type=Perl --omit=count_lines_of_code.pl
