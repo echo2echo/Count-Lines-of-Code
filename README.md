@@ -44,4 +44,4 @@ Files to be counted require read permission.  If there is a permission error you
 
 To omit/skip  counting the lines of code of the script itself in the results when counting perl lines try the following...
 	
- 	Example: $ ./count_lines_of_code.pl --type=Perl --omit=count_lines_of_code.pl
+ 	$ ./count_lines_of_code.pl --type=Perl --omit=count_lines_of_code.pl
