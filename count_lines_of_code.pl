@@ -122,11 +122,6 @@ sub usage {
 # Subroutine for Perl script line count
 sub perl_count {
 
-	if ($file !~ m/(\.pl)/) {	
-		print "Script --type flag was set for counting Perl file lines of code. \nThe file should end in .pl for a Perl script\n";
-		exit
-	}
-	
 	open FILE, $file or die "Could not open file! $!";
  	
 	my $count = my $slurp_lines = my $block = my $number_of_comment_lines = my $pod_line = my $total = my $blank = 0;
@@ -184,12 +179,8 @@ print
 
 # Subroutine for PHP script line count
 sub php_count {
-	if ($file !~ m/(\.php)/) {
-		print "Script --type flag was set for counting PHP file lines of code.\nThe file should end in .php for a PHP script\n";
-		exit;
-	}
 
-	open FILE, $file or die "Could not open file! $!";
+ 	open FILE, $file or die "Could not open file! $!";
 
 	my $count = my $slurp_lines = my $block = my $total = my $blank = my $number_of_comment_lines = my $pod_line = 0;
 	my @comment_lines;
@@ -255,10 +246,6 @@ print
 
 # Subroutine for HTML file line count
 sub html_count {
-	if ($file !~ m/(\.*htm*)/) {
-		print "Script --type flag was set for counting HTML file lines of code.\nThe file should end in .html, .htm or .shtml \n";
-		exit;
-	}
 
 	open FILE, $file or die "Could not open file! $!";
 
@@ -352,7 +339,4 @@ print
  Code:     $sumLines\n";
 
 }
-
-
-
 
