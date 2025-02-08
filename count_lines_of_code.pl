@@ -1,4 +1,4 @@
-u#!/usr/bin/env perl
+#!/usr/bin/env perl
 
 # File name: count_lines_of_code.pl
 # Perl script to count lines of code written in Perl, PHP or HTML
