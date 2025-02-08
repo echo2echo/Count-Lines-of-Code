@@ -115,8 +115,9 @@ sub usage {
         print "Example: \$ ./count_lines_of_code.pl --type=Perl\n";
 	print "Example: \$ ./count_lines_of_code.pl --type=PHP\n";
         print "Example: \$ ./count_lines_of_code.pl --type=HTML\n";
-	print "Example: \$ ./count_lines_of_code.pl --type=HTML --omit=count_lines_of_code.pl\n";
-	
+	my $scriptname= $0;
+        $scriptname =~ s/\.\///;
+        print "Example: \$ ./count_lines_of_code.pl --type=Perl --omit=$scriptname\n";
 	exit;
 }
 
