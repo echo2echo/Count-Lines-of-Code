@@ -1,4 +1,4 @@
-#!/usr/bin/env perl
+u#!/usr/bin/env perl
 
 # File name: count_lines_of_code.pl
 # Perl script to count lines of code written in Perl, PHP or HTML
@@ -114,17 +114,17 @@ foreach $file ( @files ) {
 
 # Subroutine for script usage
 sub usage {
-	print "Script Usage: \$ ./count_lines_of_code.pl --type=(PHP|Perl|HTML) \n";
-        print "Example: \$ ./count_lines_of_code.pl --type=Perl\n";
-	print "Example: \$ ./count_lines_of_code.pl --type=PHP\n";
-        print "Example: \$ ./count_lines_of_code.pl --type=HTML\n";
-	my $scriptname= $0;
+
+        my $scriptname= $0;
         $scriptname =~ s/\.\///;
-        print "Example: \$ ./count_lines_of_code.pl --type=Perl --omit=$scriptname\n";
-	exit;
+
+        print "Script Usage: \$ $scriptname --type=(PHP|Perl|HTML) \n";
+        print "Example: \$ $scriptname --type=Perl\n";
+        print "Example: \$ $scriptname --type=PHP\n";
+        print "Example: \$ $scriptname --type=HTML\n";
+        print "Example: \$ $scriptname --type=Perl --omit=$scriptname\n";
+        exit;
 }
-
-
 
 
 
