@@ -37,8 +37,16 @@ use diagnostics;
 
 my $command;
 my $filetype= "";
+my $scriptname="";
 
 $filetype = $ARGV[0];
+
+if ($ARGV[1]) { 
+	$scriptname = $ARGV[1]; 
+	$scriptname =~ s/--omit=//;
+}
+
+$scriptname =~ s/--type=$scriptname/$scriptname/;
 
 if (!$filetype) { usage(); }
 
@@ -109,6 +117,8 @@ sub usage {
         print "Example: \$ ./count_lines_of_code.pl --type=Perl\n";
 	print "Example: \$ ./count_lines_of_code.pl --type=PHP\n";
         print "Example: \$ ./count_lines_of_code.pl --type=HTML\n";
+	print "Example: \$ ./count_lines_of_code.pl --type=HTML --omit=count_lines_of_code.pl\n";
+	
 	exit;
 }
 
@@ -128,6 +138,9 @@ sub perl_count {
 	my @comment_lines;
 
 	while (<FILE>) {
+
+		if ($file eq $scriptname ) {next;}
+
 		$total++;	
 		$slurp_lines .= $_;
 
@@ -154,6 +167,8 @@ sub perl_count {
         my $lines = $count - $block;
 	
 	$file =~ s/\.\///;
+
+if ($file =~ m/$scriptname/) {return;}
 
 print "Lines of Code for $file";	
 print
@@ -339,4 +354,3 @@ print
  Code:     $sumLines\n";
 
 }
-
