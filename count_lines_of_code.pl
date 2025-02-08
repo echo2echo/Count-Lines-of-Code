@@ -4,7 +4,7 @@
 # Perl script to count lines of code written in Perl, PHP or HTML
 # By Joel Rader  info[at]joelrader[dot]net
 
-u=pod
+=pod
 
 =head1 NAME
 
