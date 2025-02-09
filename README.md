@@ -9,7 +9,7 @@ Grant permission to run script:
 	$ chmod 755 count_lines_of_code.pl
 
 For script usage type the followin without arguments.
-..
+
 	$ ./count_lines_of_code.pl 
  
 For example, to count lines of all the Perl files in a directory and each subdirectory:
