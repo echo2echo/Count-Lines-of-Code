@@ -50,7 +50,7 @@ $filetype = $ARGV[0];
 if ($ARGV[1]) { 
 	$scriptname = $ARGV[1]; 
 	$scriptname =~ s/--omit=//;
-}
+	if ( $scriptname eq "p" || $scriptname eq "l" || $scriptname eq "pl" || $scriptname eq "\.pl" ) { print "All files omitted.\n"; exit; }
 
 if (!$filetype) { usage(); }
 
