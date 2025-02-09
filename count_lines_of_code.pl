@@ -118,15 +118,15 @@ foreach $file ( @files ) {
 # Subroutine for script usage
 sub usage {
 
-        my $scriptname= $0;
-        $scriptname =~ s/\.\///;
+        my $myscriptname= $0;
+        $myscriptname =~ s/\.\///;
 
-        print "Script Usage: \$ ./$scriptname --type=(PHP|Perl|HTML) \n";
-        print "Example: \$ ./$scriptname --type=Perl\n";
-        print "Example: \$ ./$scriptname --type=PHP\n";
-        print "Example: \$ ./$scriptname --type=HTML\n";
+        print "Script Usage: \$ ./$myscriptname --type=(PHP|Perl|HTML) \n";
+        print "Example: \$ ./$myscriptname --type=Perl\n";
+        print "Example: \$ ./$myscriptname --type=PHP\n";
+        print "Example: \$ ./$myscriptname --type=HTML\n";
 	# To skip counting lines of this perl script
-        print "Example: \$ ./$scriptname --type=Perl --omit=$scriptname\n";
+        print "Example: \$ ./$myscriptname --type=Perl --omit=$myscriptname\n";
         exit;
 }
 
