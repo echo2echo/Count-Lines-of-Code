@@ -8,8 +8,8 @@ Grant permission to run script:
 
 	$ chmod 755 count_lines_of_code.pl
 
-For script usage type
-$ ./count_lines_of_code.pl 
+For script usage type...
+	$i ./count_lines_of_code.pl 
 without any arguments 
 
 For example, to count lines of all the Perl files in a directory and each subdirectory:
