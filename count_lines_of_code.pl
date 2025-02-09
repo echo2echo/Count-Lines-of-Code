@@ -51,7 +51,8 @@ if ($ARGV[1]) {
 	$scriptname = $ARGV[1]; 
 	$scriptname =~ s/--omit=//;
 	if ( $scriptname eq "p" || $scriptname eq "l" || $scriptname eq "pl" || $scriptname eq "\.pl" ) { print "All files omitted.\n"; exit; }
-
+}
+u
 if (!$filetype) { usage(); }
 
 if (($filetype ne "--type=PHP") && ($filetype ne "--type=Perl") && ($filetype ne "--type=HTML")) { usage(); }
