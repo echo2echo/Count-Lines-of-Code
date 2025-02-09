@@ -10,6 +10,7 @@ Grant permission to run script:
 
 For script usage...
 $ ./count_lines_of_code.pl 
+
 without any arguments 
 
 For example, to count lines of all the Perl files in a directory and each subdirectory:
