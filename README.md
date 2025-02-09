@@ -8,7 +8,7 @@ Grant permission to run script:
 
 	$ chmod 755 count_lines_of_code.pl
 
-For script usage type the followin without arguments.
+For script usage type the following without arguments.
 
 	$ ./count_lines_of_code.pl 
  
