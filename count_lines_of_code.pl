@@ -113,7 +113,7 @@ foreach $file ( @files ) {
 
 
 
-
+ 
 
 # Subroutine for script usage
 sub usage {
@@ -138,7 +138,7 @@ sub usage {
 # Subroutine for Perl script line count
 sub perl_count {
 
-	if ( $scriptname eq "p" || $scriptname eq "l" || $scriptname eq "pl" || $scriptname eq "\.pl" ) { print "All files omitted.\n"; exit; }
+	if ( $scriptname eq "p" || $scriptname eq "l" || $scriptname eq "pl" || $scriptname eq "\.pl" || $scriptname eq "." ) { print "All files omitted.\n"; exit; }
 	
  	open FILE, $file or die "Could not open file! $!";
  	
