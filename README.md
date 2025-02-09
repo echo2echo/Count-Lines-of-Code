@@ -14,7 +14,7 @@ For script usage type the following without arguments.
 
 or
 
-    $ perldoc ./count_lines_of_code.pl
+    $ perldoc count_lines_of_code.pl
  
 For example, to count lines of all the Perl files in a directory and each subdirectory:
 
