@@ -10,7 +10,7 @@ Grant permission to run script:
 
 For script usage type the following without arguments.
 
-	   $ ./count_lines_of_code.pl 
+	 $ ./count_lines_of_code.pl 
 
 or
 
