@@ -50,7 +50,6 @@ $filetype = $ARGV[0];
 if ($ARGV[1]) { 
 	$scriptname = $ARGV[1]; 
 	$scriptname =~ s/--omit=//;
-	if ( $scriptname eq "p" || $scriptname eq "l" || $scriptname eq "pl" || $scriptname eq "\.pl" ) { print "All files omitted.\n"; exit; }
 }
 
 if (!$filetype) { usage(); }
@@ -139,7 +138,9 @@ sub usage {
 # Subroutine for Perl script line count
 sub perl_count {
 
-	open FILE, $file or die "Could not open file! $!";
+	if ( $scriptname eq "p" || $scriptname eq "l" || $scriptname eq "pl" || $scriptname eq "\.pl" ) { print "All files omitted.\n"; exit; }
+	
+ 	open FILE, $file or die "Could not open file! $!";
  	
 	my $count = my $slurp_lines = my $block = my $number_of_comment_lines = my $pod_line = my $total = my $blank = 0;
 	my @comment_lines;
