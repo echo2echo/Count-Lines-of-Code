@@ -302,7 +302,9 @@ sub html_count {
 	close(FILE);
 	
 	$file =~ s/\.\///;
-
+	
+ 	$omit = 1;
+ 
 	print "Lines of Code for $file";
 
 print 
