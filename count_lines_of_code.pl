@@ -144,7 +144,8 @@ sub perl_count {
  	
 	my $count = my $slurp_lines = my $block = my $number_of_comment_lines = my $pod_line = my $total = my $blank = 0;
 	my @comment_lines;
-
+	my $omit = 0;
+ 
 	while (<FILE>) {
 
    		if ( $file =~ m/$scriptname/ ) {next;}
@@ -166,7 +167,7 @@ sub perl_count {
 			if ($_ =~ /^\s*$/){$blank++;}
 			next;
                 }
-		
+		$omit = 1;
 		$count++;
         }
 	
@@ -175,7 +176,8 @@ sub perl_count {
         my $lines = $count - $block;
 	
 	$file =~ s/\.\///;
-	
+	if ( $omit == 0 ){ exit; }
+ 
 print "Lines of Code for $file";	
 print
 "  Total:    $total
