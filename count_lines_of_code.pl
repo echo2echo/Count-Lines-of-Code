@@ -61,6 +61,7 @@ my $sumBlock;
 my $sumComments;
 my $sumBlank;
 my $sumLines;
+my $omit = 0;
 
 if ( $filetype =~ m/Perl/ ) { $command = "find . -name \"*.pl\" | sort"; }
 if ( $filetype =~ m/PHP/ ) { $command = "find . -name \"*.php\" | sort"; }
@@ -178,7 +179,7 @@ sub perl_count {
 	$file =~ s/\.\///;
 	if ( $omit == 0 ){ return; }
  
-print "Lines of Code for $file";	u
+print "Lines of Code for $file";	
 print
 "  Total:    $total
   POD:      $block
