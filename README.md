@@ -50,14 +50,15 @@ Files to be counted require read permission.  If there is a permission error you
 	
 	$ sudo ./count_lines_of_code.pl --type=Perl | grep -A 5 "filename.pl"
 
-To omit/skip  counting the lines of code of the script itself in the results when counting perl lines try something like the following...
-
-*** --omit flag is still a work in progress.  As a temporary work around place the count_lines_of_code.pl script in a directory with a least one other file to be counted.  ***
- 	
-Until --omit flag is fixed you will need at least 2 files in the directory you are using the script.  Or create a small perl file for the script to run without errors. A bug.
-	
-  	$ echo "Fill file for functionality" > omit.pl
+To omit/skip counting the lines of code of the script itself in the results when counting perl lines try something like below...
 
 --omit usage
 
   	$ ./count_lines_of_code.pl --type=Perl --omit=count_lines_of_code.pl
+
+
+*** --omit flag is still a work in progress.  As a temporary work around place the count_lines_of_code.pl script in a directory with a least one other perl file to be counted.  ***
+ 	
+Until the --omit flag is fixed you will need at least 2 perl files in the same directory as you are using the script in.  Or create a small perl file with the script below to run without errors. Yes, a bug.
+	
+  	$ echo "Fill text for script functionality" > omit.pl
