@@ -147,7 +147,7 @@ sub perl_count {
 
 	while (<FILE>) {
 
-		if ($file eq $scriptname ) {next;}
+   		if ( $file =~ m/$scriptname/ ) {next;}
 
 		$total++;	
 		$slurp_lines .= $_;
@@ -175,9 +175,9 @@ sub perl_count {
         my $lines = $count - $block;
 	
 	$file =~ s/\.\///;
-
-if ($file =~ m/$scriptname/) {return;}
-
+	
+ 	if ( $count == 0 ){ print "No files counted.\n"; exit; }
+	
 print "Lines of Code for $file";	
 print
 "  Total:    $total
