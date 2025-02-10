@@ -52,6 +52,6 @@ Files to be counted require read permission.  If there is a permission error you
 
 To omit/skip  counting the lines of code of the script itself in the results when counting perl lines try something like the following...
 
-*** --omit flag is still a work in progress  ***
+*** --omit flag is still a work in progress.  As a temporary work around place the count_lines_of_code.pl script in a directory with a least one other file to be counted.  ***
  
  	$ ./count_lines_of_code.pl --type=Perl --omit=count_lines_of_code.pl
