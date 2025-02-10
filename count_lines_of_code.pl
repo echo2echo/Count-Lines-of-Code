@@ -176,8 +176,6 @@ sub perl_count {
 	
 	$file =~ s/\.\///;
 	
- 	if ( $count == 0 ){ print "No files counted.\n"; exit; }
-	
 print "Lines of Code for $file";	
 print
 "  Total:    $total
