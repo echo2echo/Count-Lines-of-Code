@@ -325,9 +325,6 @@ print
 
 
 
-if ( $omit == 0 ){ print "No files counted.\n"; exit; }
-
-
 if ( $filetype eq "--type=PHP") {
 	print "~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
 	print "Summary for all PHP files: \n";
