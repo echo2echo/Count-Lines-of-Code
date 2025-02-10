@@ -1,4 +1,4 @@
-#!/usr/bin/env perl
+u#!/usr/bin/env perl
 
 # File name: count_lines_of_code.pl
 # Perl script to count lines of code written in Perl, PHP or HTML
@@ -176,9 +176,9 @@ sub perl_count {
         my $lines = $count - $block;
 	
 	$file =~ s/\.\///;
-	if ( $omit == 0 ){ exit; }
+	if ( $omit == 0 ){ return; }
  
-print "Lines of Code for $file";	
+print "Lines of Code for $file";	u
 print
 "  Total:    $total
   POD:      $block
@@ -318,9 +318,11 @@ print
  $sumLines += $lines;
 
 
-
-	
 } 
+
+
+
+if ( $omit == 0 ){ print "No files counted.\n"; exit; }
 
 
 if ( $filetype eq "--type=PHP") {
