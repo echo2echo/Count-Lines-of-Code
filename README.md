@@ -59,6 +59,6 @@ To omit/skip counting the lines of code of the script itself in the results when
 
 *** --omit flag is still a work in progress.  As a temporary work around, place the count_lines_of_code.pl script in a directory with a least one other perl file to be counted.  ***
  	
-Until the --omit flag is fixed you will need at least 2 perl files in the same directory as you are using the script in.  Or create a small perl file with the script below to run without errors. Yes, a bug.
+Until the --omit flag is fixed you will need at least 2 perl files in the same directory as you are using the script in.  Or create a small .pl file with the script below to run without errors. Yes, a bug.
 	
   	$ echo "Fill text for script functionality" > omit.pl
