@@ -1,6 +1,6 @@
 # Count-Lines-of-Code
 
-Perl Script to Count Lines of Code (cloc) of Perl, PHP and HTML Files on Linux. 
+Perl Script to Count Lines of Code ( cloc ) of Perl, PHP and HTML Files on Linux. 
 
 Place script in directory with files and subdirectories to count
 
